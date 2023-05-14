@@ -126,13 +126,6 @@ const backSkillsArray: SkillsInterface[] = [
         mr: 2,
     },
     {
-        name: "Firebase",
-        icon: SiFirebase,
-        color: "blue.500",
-        boxSize: 6,
-        mr: 2,
-    },
-    {
         name: "Docker",
         icon: FaDocker,
         color: "blue.500",
@@ -168,7 +161,7 @@ const backSkillsArray: SkillsInterface[] = [
         mr: 2,
     },
     {
-        name: "FirebaseDB",
+        name: "Firebase",
         icon: SiFirebase,
         color: "yellow.500",
         boxSize: 6,

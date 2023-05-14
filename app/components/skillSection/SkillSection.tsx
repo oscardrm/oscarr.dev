@@ -1,24 +1,54 @@
 import React from "react";
-import { Box, Icon, Text, Wrap, WrapItem } from "@chakra-ui/react";
-import SkillsInterface from "./skillsArray";
+import { Box, Card, CardBody, CardHeader, Heading, Icon, Stack, StackDivider, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import SkillsInterface, { backSkillsArray, frontSkillsArray } from "./skillsArray";
 
 interface SkillSectionProps {
     arrayTools: SkillsInterface[];
 }
 
-const SkillSection = ({ arrayTools }: SkillSectionProps) => {
+const SkillsInfo = ({ arrayTools }: SkillSectionProps) => {
     return (
-        <Box p={4}>
+        <Box p={4} >
             <Wrap>
-                {arrayTools.map((skill, index) => (
+                {arrayTools.map((skill) => (
                     <WrapItem key={skill.name}>
-                        <Box display="flex" alignItems="center">
+                        <Box display="flex">
                             <Icon as={skill.icon} boxSize={skill.boxSize} color={skill.color} mr={skill.mr} />
                             <Text mr={4}>{skill.name}</Text>
                         </Box>
                     </WrapItem>
                 ))}
             </Wrap>
+        </Box>
+    );
+}
+const SkillSection = () => {
+    return (
+
+        <Box pt={2}>
+            <Card>
+                <CardHeader pb={-1}>
+                    <Heading size='xl'>Skills</Heading>
+                </CardHeader>
+                <CardBody>
+                    <Stack divider={<StackDivider />} spacing='4'>
+                        <Heading size='md' textTransform='uppercase'>
+                            Front-End
+                        </Heading>
+                        <Text pt='2' fontSize='lg' textAlign="justify">
+                            Over the years I have tried several frameworks and libraries, I will list some.
+                        </Text>
+                        <SkillsInfo arrayTools={frontSkillsArray} />
+                        <Heading size='md' textTransform='uppercase'>
+                            Back-End
+                        </Heading>
+                        <Text pt='2' fontSize='lg' textAlign="justify">
+                            Over the years I have tried several languages ​​​​and tools. below i show some.
+                        </Text>
+                        <SkillsInfo arrayTools={backSkillsArray} />
+                    </Stack>
+                </CardBody>
+            </Card>
         </Box>
     );
 };
