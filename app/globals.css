@@ -8,7 +8,7 @@
   /* background-image: linear-gradient(to right, #ef4fa6, #61d800, #b39afd, #ffaf49); */
   background-image: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   background-clip: text;
-  animation: color-change 5s infinite linear;
+  animation: color-change 10s infinite linear;
 }
 
 @keyframes color-change {
@@ -45,3 +45,33 @@
 }
 
 
+.tool-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-circle__inner {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tool-circle__tool {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.tool-circle__active-tool {
+  color: #fff;
+  background-color: #000;
+}

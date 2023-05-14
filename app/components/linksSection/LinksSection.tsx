@@ -1,11 +1,12 @@
 import { Flex, Icon, Link, Tooltip } from "@chakra-ui/react";
-import { FaGithub, FaGitlab, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaGitlab, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import '../../styles/glow-on-hover.css';
 const inialLinks = [
     { icon: FaGitlab, link: "https://gitlab.com/oscar.roman", tooltip: 'CHECK MY GITLAB PROFILE', id: 1 },
     { icon: FaGithub, link: "https://github.com/oscardrm", tooltip: 'CHECK MY GITHUB PROFILE', id: 2 },
     { icon: FaLinkedin, link: "https://www.linkedin.com/in/o-roman/", tooltip: 'CHECK MY LINKEDIN', id: 3 },
     { icon: FaEnvelope, link: "mailto:oscardario.roman@gmail.com", tooltip: 'SEND ME A MAIL', id: 4 },
+    { icon: FaWhatsapp, link: "https://wa.me/56987030306", tooltip: 'WRITE ME ON WHATSAPP', id:5 },
 ];
 function LinksSection() {
 
@@ -30,7 +31,7 @@ function LinksSection() {
                 }
             </Flex>
 
-            <Flex align="center" justify="center">
+            <Flex align="center" justify="center" pt={4}>
                 <button className="glow-on-hover" type="button" onClick={downloadCV}>DOWNLOAD MY CV</button>
             </Flex>
         </>

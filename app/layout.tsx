@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import { Providers } from './providers';
-import Header from './components/header/header';
+import HeaderSection from './components/headerSection/HeaderSection';
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'oscarr.dev',
@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>
-        <Header />
+          <HeaderSection />
           {children}
         </Providers>
       </body>
