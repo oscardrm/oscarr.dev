@@ -12,8 +12,8 @@ const AboutMeSection = () => {
                     <CardHeader pb={-1}>
                         <Heading size='xl'>Abaout me 👨‍💻</Heading>
                     </CardHeader>
-                    <CardBody textAlign="justify">
-                        <Text fontSize='lg' pb={2}>
+                    <CardBody textAlign="justify" fontSize='xl'>
+                        <Text pb={2}>
                             I am a passionate software developer, always looking to learn new things and improve my skills.
                             I focus on following good practices to create efficient and effective solutions in my day to day.
                         </Text>

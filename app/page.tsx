@@ -1,6 +1,6 @@
 'use client'
 import { Box, Flex, Text } from "@chakra-ui/react";
-import AvatarComponent from "./components/avatarSection/AvatarSection";
+import AvatarSection from "./components/avatarSection/AvatarSection";
 import LinksSection from "./components/linksSection/LinksSection";
 import SkillSection from "./components/skillSection/SkillSection";
 import AboutMeSection from "./components/aboutMeSection/AboutMeSection";
@@ -12,7 +12,7 @@ const Home = () => {
       maxW="960px"
       mx="auto"
       px={4}>
-      <AvatarComponent />
+      <AvatarSection />
       <Flex align="center" justify="center">
         <Text fontSize='4xl'>FIND ME!</Text>
       </Flex>

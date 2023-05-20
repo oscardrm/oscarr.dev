@@ -15,8 +15,9 @@ const AvatarSection = () => {
                         fontWeight='bold'
                         fontFamily="heading"
                         letterSpacing=".1em"
+                        textAlign="center"
                     >
-                    Hi, I&apos;m Oscar Roman.
+                    Hi, I&apos;m Oscar Román.
                     </Text>
                 </Box>
             </Flex>

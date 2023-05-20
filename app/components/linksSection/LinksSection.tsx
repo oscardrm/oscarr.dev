@@ -1,6 +1,7 @@
 import { Flex, Icon, Link, Tooltip } from "@chakra-ui/react";
 import { FaGithub, FaGitlab, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
-import '../../styles/glow-on-hover.css';
+import '@oscarr/app/styles/glow-on-hover.css';
+import '@oscarr/app/styles/icon-hover.css';
 const inialLinks = [
     { icon: FaGitlab, link: "https://gitlab.com/oscar.roman", tooltip: 'CHECK MY PUBLICS GITLAB REPOS', id: 1 },
     { icon: FaGithub, link: "https://github.com/oscardrm", tooltip: 'CHECK MY PUBLICS GITHUB REPOS', id: 2 },

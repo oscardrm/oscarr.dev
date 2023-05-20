@@ -25,24 +25,24 @@ const SkillsInfo = ({ arrayTools }: SkillSectionProps) => {
 const SkillSection = () => {
     return (
 
-        <Box pt={2}>
+        <Box pt={2} >
             <Card>
                 <CardHeader pb={-1}>
                     <Heading size='xl'>Skills</Heading>
                 </CardHeader>
-                <CardBody>
+                <CardBody fontSize='xl'>
                     <Stack divider={<StackDivider />} spacing='4'>
                         <Heading size='md' textTransform='uppercase'>
                             Front-End
                         </Heading>
-                        <Text pt='2' fontSize='lg' textAlign="justify">
+                        <Text pt='2'  textAlign="justify">
                             Over the years I have tried several frameworks and libraries, I will list some.
                         </Text>
                         <SkillsInfo arrayTools={frontSkillsArray} />
                         <Heading size='md' textTransform='uppercase'>
                             Back-End
                         </Heading>
-                        <Text pt='2' fontSize='lg' textAlign="justify">
+                        <Text pt='2'  textAlign="justify">
                             Over the years I have tried several languages ​​​​and tools. below i show some.
                         </Text>
                         <SkillsInfo arrayTools={backSkillsArray} />
