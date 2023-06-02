@@ -1,5 +1,7 @@
 import { Providers } from './providers';
 import HeaderSection from './components/headerSection/HeaderSection';
+import { Analytics } from '@vercel/analytics/react';
+
 export const metadata = {
   title: 'oscarr.dev',
   description: 'Oscar Román #Developer',
@@ -21,6 +23,7 @@ export default function RootLayout({
           <HeaderSection />
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
